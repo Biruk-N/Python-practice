@@ -4,6 +4,8 @@
 ### data-types
 ### opertators
 ### math functions 
-  > `round` function
+> `round` function
+> `abs` function
+### operator precedence
 
 
