@@ -12,3 +12,8 @@ print(abs(-39))
 
 # operator precedence
 print(12 - 4 * 4)
+
+print(bin(2))
+print(int('0b10', 2))
+
+# varibless
