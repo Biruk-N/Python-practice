@@ -1,2 +1,3 @@
-print('this first one')
-print('this first one')
+name = input('add your name \n')
+      
+print(name + ' first one')
