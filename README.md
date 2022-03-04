@@ -24,6 +24,15 @@ The pracitce file is in [main.py](main.py)
 ![](https://csharpcorner-mindcrackerinc.netdna-ssl.com/article/python-datatypes/Images/pd12.png)
 
 ### built-in functions
+> len()
 
+> cpapitalize() | only the first letter
 
+> upper()
 
+> find()
+
+> replace()
+### list
+### list slicing
+### matrix
