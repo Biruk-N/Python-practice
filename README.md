@@ -36,3 +36,4 @@ The pracitce file is in [main.py](main.py)
 ### list
 ### list slicing
 ### matrix
+### list methods

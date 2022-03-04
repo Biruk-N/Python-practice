@@ -120,3 +120,11 @@ print(new_cart) # this one update every time when amazon_cart updated
 print(new_cart2) # only has amazon_cart value that assigned eariler
 print(amazon_cart[0::2])
 # lists are immutable
+
+# Matrix
+matrix = [
+  [1, 2, 3], 
+  [4, 5, 6],
+  [7, 8, 9]
+]
+print(matrix[0][1])
