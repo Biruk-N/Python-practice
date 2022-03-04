@@ -114,7 +114,7 @@ amazon_cart = [
 # list slicing
 amazon_cart[0] = 'pc'
 new_cart = amazon_cart
-new_cart2 = amazon_cart[:]
+new_cart2 = amazon_cart[:] # amazon_cart.copy()
 amazon_cart[0] = 'laptop'
 print(new_cart) # this one update every time when amazon_cart updated
 print(new_cart2) # only has amazon_cart value that assigned eariler
@@ -128,3 +128,40 @@ matrix = [
   [7, 8, 9]
 ]
 print(matrix[0][1])
+
+#list method
+
+basket = [1, 2, 3, 4]
+new_list = basket.append(100)
+
+print(new_list)
+print(basket)
+
+basket.insert(4, 50)
+new_list = basket
+print(new_list)
+
+basket.extend([10, 90, 80])
+new_list = basket
+print(new_list)
+
+basket.pop()
+print(basket) # by index remove like basket.pop(0)
+
+basket.remove(4)# by value remove
+print(basket)
+
+new_list = basket.pop(4) # it holds a avalue that removed
+
+# basket.clear()
+basket = ['a', 'b', 'c', 'd', 'e', 'd']
+print(basket.index('d', 2, 4)) # 2 & 4 are start and end of index to searching for d
+print('d' in basket) # boolean value
+print(basket.count('d'))
+# ======
+basket.sort()
+print(basket)
+# or
+print(sorted(basket)) # it does't change the original value
+basket.reverse()
+print(basket)
