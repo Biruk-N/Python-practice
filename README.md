@@ -37,3 +37,4 @@ The pracitce file is in [main.py](main.py)
 ### list slicing
 ### matrix
 ### list methods
+[ list methods reference ](https://www.w3schools.com/python/python_lists_methods.asp)
