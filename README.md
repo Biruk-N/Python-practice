@@ -38,3 +38,10 @@ The pracitce file is in [main.py](main.py)
 ### matrix
 ### list methods
 [ list methods reference ](https://www.w3schools.com/python/python_lists_methods.asp)
+
+### common list patterns
+> to reverse slicing reverse, [::-1]
+
+> range(start, end), range(value)
+
+### join

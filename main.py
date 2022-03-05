@@ -165,3 +165,24 @@ print(basket)
 print(sorted(basket)) # it does't change the original value
 basket.reverse()
 print(basket)
+
+# common list patterns
+# to reverse slicing reverse
+
+print(basket[::-1])
+print(basket) # not changed by slicing reverse
+
+print(range(1, 100)) # range(1, 100)
+print(list(range(1, 100)))
+# or
+print(list(range(101)))
+
+# join
+sentence = ' '
+new_sentence = sentence.join(['hi', 'my', 'name', 'is'])
+print(sentence)
+print(new_sentence)
+
+# or
+new_sentence = ' '.join(['hi', 'my', 'name', 'is'])
+print(new_sentence)
