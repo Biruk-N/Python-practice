@@ -222,10 +222,69 @@ print(mylist[0]['a'])
 #  dictionary methods
 user = {
   'basket': [1, 2, 3],
-  'greet': 'hello'
+  'greet': 'hello',
+  'age': 20
 }
+
+print('hello' in user.values())
+print(user.items())
+
 print(user.get('age'))
 print(user.get('age', 44)) # if not exist
 
 user2 = dict(name = 'John')
 print(user2)
+user2.clear()
+print(user2)
+
+user2 = user.copy()
+print(user2)
+user.pop('age')
+print(user)
+
+print(user.update({'age': 30}))
+print(user)
+
+# Tuples 
+my_tuple = (1, 2, 3, 4, 5)
+print(5 in my_tuple)
+
+new_tuple = my_tuple[1:2]
+print(new_tuple) # (2,)
+
+new_tuple = my_tuple[1:4]
+print(new_tuple)
+
+x, y, z, *other = (1, 2, 3, 4, 5)
+print(x)
+print(y)
+print(z)
+print(other)
+
+#tuple methods are 2 count & index
+
+print(my_tuple.count(4))
+print(my_tuple.index(4, 1, 5))
+print(len(my_tuple))
+
+# set
+# unordered collections of unique objetcs
+
+my_set = {2, 4, 3, 4, 4, 5}
+print(my_set) # {2, 3, 4, 5}
+my_set.add(100)
+my_set.add(2)
+
+print(my_set)
+
+my_list = [1, 2, 3, 4, 5, 5]
+print(set(my_list))
+
+my_set = {1, 2, 3, 4, 4, 5}
+your_set = {4, 5, 6, 7, 8, 9, 10}
+print(my_set.difference(your_set))
+print(my_set.discard(5))
+print(my_set)
+# print(my_set.difference_update(your_set))
+# print(my_set)
+print(my_set.intersection(your_set))

@@ -48,11 +48,33 @@ The pracitce file is in [main.py](main.py)
 ### list unpacking
 ### dictionary
 ![](https://media.geeksforgeeks.org/wp-content/uploads/Dictionary-Creation-1.jpg)
-> keys can hold only immutable datatypes link int, str, ... but not list
+> keys can hold only immutable datatypes link int, str,tuple ... but not list
 
 > dictionary methods, .get(key) or .get(key, default_Value)
+
+> .values()
+
+> .items()
+
+> .clear()
+
+> .copy()
+
+>  .pop() or popitem()
+
+> .update({key: value}) 
+
+
 ### datastructure
 ![](https://miro.medium.com/max/700/1*2JFd94q0vzsEcr-LB-220g.png)
 > dictionary
 
 > list
+
+> tuples:  like as list but immutable so it's much faster than list
+
+> set: one_set.difference(other_set)
+  
+  > .difference_update()
+ 
+  > .discard()
