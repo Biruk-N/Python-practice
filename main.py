@@ -38,9 +38,9 @@ print(type(str(number)))
 # escape sequence
 
 emoji = """
-@@@
-( )
-  ;
+      WOW
+      O O
+      ___
 """
 print (emoji)
 
