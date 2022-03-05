@@ -45,3 +45,8 @@ The pracitce file is in [main.py](main.py)
 > range(start, end), range(value)
 
 ### join
+### list unpacking
+### dictionary
+> keys can hold only immutable datatypes link int, str, ... but not list
+
+> dictionary methods, .get(key) or .get(key, default_Value) 

@@ -186,3 +186,43 @@ print(new_sentence)
 # or
 new_sentence = ' '.join(['hi', 'my', 'name', 'is'])
 print(new_sentence)
+
+# list unpacking
+a, c, b, *other, d = [1, 3, 4, 5, 6, 6, 8, 4]
+print(a)
+print(b)
+print(c)
+print(other)
+print(d)
+# None 
+#  Dictionary
+dictionary = {
+  'a': [1, 2, 4], 
+  'b': 'hello',
+  'c': True
+}
+
+print(dictionary['b'])
+print(dictionary['a'][1])
+
+mylist = [
+  {
+  'a': [1, 2, 4], 
+  'b': 'hello',
+  'c': True
+},
+  {
+  'a': [4, 2, 4], 
+  'b': 'hello',
+  'c': True
+}
+]
+print(mylist[0]['a'])
+
+#  dictionary methods
+user = {
+  'basket': [1, 2, 3],
+  'greet': 'hello'
+}
+print(user.get('age'))
+print(user.get('age', 44))
