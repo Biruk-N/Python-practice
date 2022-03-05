@@ -73,8 +73,4 @@ The pracitce file is in [main.py](main.py)
 
 > tuples:  like as list but immutable so it's much faster than list
 
-> set: one_set.difference(other_set)
-  
-  > .difference_update()
- 
-  > .discard()
+> set: one_set.difference(other_set), difference_update(), .discard(), .difference_update(), .intersection() or &, .isdisjoint(), .issuperset(), .issubset(), .union() or | .
