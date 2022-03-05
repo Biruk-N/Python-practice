@@ -47,6 +47,12 @@ The pracitce file is in [main.py](main.py)
 ### join
 ### list unpacking
 ### dictionary
+![](https://media.geeksforgeeks.org/wp-content/uploads/Dictionary-Creation-1.jpg)
 > keys can hold only immutable datatypes link int, str, ... but not list
 
-> dictionary methods, .get(key) or .get(key, default_Value) 
+> dictionary methods, .get(key) or .get(key, default_Value)
+### datastructure
+![](https://miro.medium.com/max/700/1*2JFd94q0vzsEcr-LB-220g.png)
+> dictionary
+
+> list

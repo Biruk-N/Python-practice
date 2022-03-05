@@ -201,7 +201,7 @@ dictionary = {
   'b': 'hello',
   'c': True
 }
-
+print(dictionary)
 print(dictionary['b'])
 print(dictionary['a'][1])
 
@@ -225,4 +225,7 @@ user = {
   'greet': 'hello'
 }
 print(user.get('age'))
-print(user.get('age', 44))
+print(user.get('age', 44)) # if not exist
+
+user2 = dict(name = 'John')
+print(user2)
