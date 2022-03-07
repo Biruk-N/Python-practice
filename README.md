@@ -74,3 +74,42 @@ The pracitce file is in [main.py](main.py)
 > tuples:  like as list but immutable so it's much faster than list
 
 > set: one_set.difference(other_set), difference_update(), .discard(), .difference_update(), .intersection() or &, .isdisjoint(), .issuperset(), .issubset(), .union() or | .
+
+---
+
+# Python Basic II
+
+### indentation	
+### truthy and falsy
+### ternary operators
+### short circuiting: 
+  ** short circuiting **  mean the stoppage of execution of boolean operation if the truth value of expression has been determined already.
+### logical operator
+
+
+
+
+
+### Image
+
+![alt text](https://www.markdownguide.org/assets/images/tux.png)
+
+## Extended Syntax
+
+These elements extend the basic syntax by adding additional features. Not all Markdown applications support these elements.
+
+### Table
+
+| Syntax | Description |
+| ----------- | ----------- |
+| Header | Title |
+| Paragraph | Text |
+
+
+
+
+### Task List
+
+- [x] Write the press release
+- [ ] Update the website
+- [ ] Contact the media

@@ -300,3 +300,124 @@ my_set = {4, 5}
 your_set = {4, 5, 6, 7, 8, 9, 10}
 print(my_set.issubset(your_set))
 print(my_set.issuperset(your_set))
+
+b =['dh', 'hd']
+print('j' in b)
+
+# indentation
+
+is_old = True
+
+is_licenced = True
+
+if is_old and is_licenced:
+    print('you\'r')
+else:
+    print('sorry')
+
+print('okok')
+
+# Truthy and falsy
+
+print(bool('hello')) # truthy
+
+print(bool('')) #falsy
+
+print(bool(0)) # falsy
+
+
+
+password = '123'
+
+username = 'johnny'
+
+if password and username:
+    print('go on')
+else:
+    print('please fill the form')
+
+
+# Ternary operators
+
+# condition_is_true if condition else condition_if_false
+
+is_friend = False
+
+can_message = 'message allowed' if is_friend else 'not allowed to message'
+
+print(can_message)
+
+# Short Ciruciting
+
+is_Friend = True
+
+is_User = True
+
+if is_Friend and is_User:
+    print('bff')
+
+
+# Logical operators
+
+# and, or, >, <, ==, >=, <=, !=, not
+
+print('a' > 'A') # True because
+# indentation
+
+is_old = True
+
+is_licenced = True
+
+if is_old and is_licenced:
+    print('you\'r')
+else:
+    print('sorry')
+
+print('okok')
+
+# Truthy and falsy
+
+print(bool('hello')) # truthy
+
+print(bool('')) #falsy
+
+print(bool(0)) # falsy
+
+
+
+password = '123'
+
+username = 'johnny'
+
+if password and username:
+    print('go on')
+else:
+    print('please fill the form')
+
+
+# Ternary operators
+
+# condition_is_true if condition else condition_if_false
+
+is_friend = False
+
+can_message = 'message allowed' if is_friend else 'not allowed to message'
+
+print(can_message)
+
+# Short Ciruciting
+
+is_Friend = True
+
+is_User = True
+
+if is_Friend and is_User:
+    print('bff')
+
+
+# Logical operators
+
+# and, or, >, <, ==, >=, <=, !=, not
+
+print('a' > 'A') # True because
+
