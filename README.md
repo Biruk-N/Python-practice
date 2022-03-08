@@ -83,7 +83,7 @@ The pracitce file is in [main.py](main.py)
 ### truthy and falsy
 ### ternary operators
 ### short circuiting: 
-  ** short circuiting **  mean the stoppage of execution of boolean operation if the truth value of expression has been determined already.
+** short circuiting **  mean the stoppage of execution of boolean operation if the truth value of expression has been determined already.
 ### logical operator
 
 
@@ -103,4 +103,4 @@ The pracitce file is in [main.py](main.py)
 
 - [x] Python basics I
 - [x] Python basics II
-- [ ] 
+- [ ] Advaned 
