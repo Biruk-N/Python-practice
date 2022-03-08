@@ -87,29 +87,20 @@ The pracitce file is in [main.py](main.py)
 ### logical operator
 
 
-
-
-
-### Image
-
-![alt text](https://www.markdownguide.org/assets/images/tux.png)
-
-## Extended Syntax
-
-These elements extend the basic syntax by adding additional features. Not all Markdown applications support these elements.
-
 ### Table
 
-| Syntax | Description |
+| Mutable | Immutable |
 | ----------- | ----------- |
-| Header | Title |
-| Paragraph | Text |
+| List | Set |
+|  - | Dictionary(key) |
+| - | - |
+| -  | String |
 
 
 
 
-### Task List
+### All tutorial
 
-- [x] Write the press release
-- [ ] Update the website
-- [ ] Contact the media
+- [x] Python basics I
+- [x] Python basics II
+- [ ] 
