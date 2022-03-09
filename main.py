@@ -420,4 +420,12 @@ if is_Friend and is_User:
 # and, or, >, <, ==, >=, <=, !=, not
 
 print('a' > 'A') # True because
-
+# ternary operator
+is_true = False
+test = 'this on is true' if is_true else 'this is incorrect'
+print(test)
+# loops
+# for loop
+for item in 'this is a test':
+  print(item)
+  
