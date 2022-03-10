@@ -71,7 +71,7 @@ The pracitce file is in [main.py](main.py)
 
 > list
 
-> tuples:  like as list but immutable so it's much faster than list
+> tuples:  like as list but immutable, so it's much faster than list
 
 > set: one_set.difference(other_set), difference_update(), .discard(), .difference_update(), .intersection() or &, .isdisjoint(), .issuperset(), .issubset(), .union() or | .
 
@@ -82,9 +82,17 @@ The pracitce file is in [main.py](main.py)
 ### indentation	
 ### truthy and falsy
 ### ternary operators
-### short circuiting: 
-** short circuiting **  mean the stoppage of execution of boolean operation if the truth value of expression has been determined already.
+### short-circuiting: 
+** short-circuiting **  mean the stoppage of execution of boolean operation if the truth value of expression has been determined already.
 ### logical operator
+### loops
+#### for loop: 
+> iterable - list, dictionary, tuple, set, string
+> 
+> iterated - one by one check each item in the collection
+> 
+> .items() to access key and value for dictionary in for loop
+#### while
 
 
 ### Table

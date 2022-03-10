@@ -419,7 +419,20 @@ print(test)
 # for loop
 for item in 'this is a test':
     print(item)
-
+# iterable
+user = {
+    'name': 'Golem',
+    'age': 5006,
+    'can_swim': False
+}
+for item in user:
+    print(item)
+    # only keys
+for item in user.items():
+    print(item)
+    # ('name', 'Golem')
+    # ('age', 5006)
+    # ('can_swim', False)
 
 # return
 def sum(num1, num2):
@@ -434,8 +447,10 @@ total = sum(10, 20)
 print(total)
 
 
-# 1. Wrap the above code in a function called checkDriverAge(). Whenever you call this function, you will get prompted for age.
-# Notice the benefit in having checkDriverAge() instead of copying and pasting the function everytime?
+# 1. Wrap the above code in a function called checkDriverAge().
+# Whenever you call this function, you will get prompted for age.
+# Notice the benefit in having checkDriverAge() instead of copying and pasting the function
+# everytime?
 
 def checkDriverAge():
     age = input("What is your age?: ")
@@ -450,18 +465,19 @@ def checkDriverAge():
 checkDriverAge()
 
 
-# 2 Instead of using the input(). Now, make the checkDriverAge() function accept an argument of age, so that if you enter:
+# 2 Instead of using the input().
+# Now, make the checkDriverAge() function accept an argument of age, so that if you enter:
 # checkDriverAge(92);
 # it returns "Powering On. Enjoy the ride!"
 # also make it so that the default age is set to 0 if no argument is given.
 
-def check_Driver_Age(age=0):
+def checkdriverage(age=0):
     if int(age) < 18:
-        print("Sorry, you are too yound to drive this car. Powering off")
+        print("Sorry, you are too your to drive this car. Powering off")
     elif int(age) > 18:
         print("Powering On. Enjoy the ride!");
     elif int(age) == 18:
         print("Congratulations on your first year of driving. Enjoy the ride!")
 
 
-check_Driver_Age()
+checkdriverage()
