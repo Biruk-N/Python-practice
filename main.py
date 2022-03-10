@@ -466,6 +466,7 @@ checkDriverAge()
 #checkDriverAge(92);
 #it returns "Powering On. Enjoy the ride!"
 #also make it so that the default age is set to 0 if no argument is given.
+
 def checkDriverAge(age=0):
     if int(age) < 18:
         print("Sorry, you are too yound to drive this car. Powering off")
