@@ -86,13 +86,26 @@ The pracitce file is in [main.py](main.py)
 ** short-circuiting **  mean the stoppage of execution of boolean operation if the truth value of expression has been determined already.
 ### logical operator
 ### loops
-#### for loop: 
+#### for loop: when the iteration value known
 > iterable - list, dictionary, tuple, set, string
 > 
 > iterated - one by one check each item in the collection
 > 
-> .items() to access key and value for dictionary in for loop
-#### while
+> .items(): to access key and value for dictionary in for loop
+> 
+> .values(): to print out only values of a dictionary
+> 
+> .keys(): only key
+> 
+> range(): in for loop
+> 
+> enumerate(): to list index with value in for loop
+#### while : when the value not known
+> break
+> 
+> continue
+> 
+> pass
 
 
 ### Table

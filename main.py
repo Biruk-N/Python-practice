@@ -397,7 +397,7 @@ can_message = 'message allowed' if is_friend else 'not allowed to message'
 
 print(can_message)
 
-# Short Ciruciting
+# Short Circuiting
 
 is_Friend = True
 
@@ -434,13 +434,85 @@ for item in user.items():
     # ('age', 5006)
     # ('can_swim', False)
 
+for item in user.values():
+    print(item)
+    # Golem
+    # 5006
+    # False
+
+for item in user.keys():
+    print(item)
+    # only keys
+
+for item in user.items():
+    key, value = item
+    print(key, value)
+    # name Golem
+    # age 5006
+    # can_swim False
+# or
+for key, value in user.items():
+    print(key, value)
+    # name Golem
+    # age 5006
+    # can_swim False
+# exercise tricky counter
+my_list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+counter = 0
+
+for item in my_list:
+    counter = counter + item
+print(counter)
+# range in for loop
+print(range(100))
+# range(0, 100)
+# print(list(range(101))) to list all of...
+for _ in range(0, 101, 50):
+    print(_)
+# list in loop
+
+# for _ in range(101, 0, -1):
+#     print(_)
+# reverse
+# list in loop
+# enumerate
+for i, char in enumerate('hello'):
+    print(i, char)
+# locate 50's index in list
+for i, char in enumerate(list(range(101))):
+    if char == 50:
+        print(f'index of 50 is {i}')
+# while loop
+i = 0
+
+while i < 5:
+    print('this is ')
+    i += 1
+    break
+else:
+    print('done')
+    # not executed because of break
+
+while True:
+    response = input('say something')
+
+    if response == 'bye':
+        break
+
+
+# continue
+
+# pass
+
+# functions
+
 # return
 def sum(num1, num2):
     def another_func(n1, n2):
         return n1 + n2
 
     return another_func(num1, num2)
-    print('hello')  # not executed after return the function is exit
+    print('hello')  # not executed after return the function will exit.
 
 
 total = sum(10, 20)
@@ -451,6 +523,7 @@ print(total)
 # Whenever you call this function, you will get prompted for age.
 # Notice the benefit in having checkDriverAge() instead of copying and pasting the function
 # everytime?
+
 
 def checkDriverAge():
     age = input("What is your age?: ")
