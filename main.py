@@ -18,14 +18,14 @@ print(int('0b10', 2))
 
 # variables
 
-# expresions vs statement
+# expressions vs statement
 
-# augumented assignment operators
+# augmented assignment operators
 x = 10
 x += 2
 print(x)
 
-# strings and concatination
+# strings and concatenation
 x = 'this is me' + ' ' + 'and you'
 print(x)
 
@@ -45,11 +45,11 @@ print(emoji)
 
 # formatted strings
 
-name = 'Jhon'
+name = 'John'
 age = 30
 print(f'Hey {name} is {age}')
 
-# imutability | `string` is immutable
+# immutability | `string` is immutable
 # str = '01222'
 # str[0] = '9'
 # this is type error because string is immutable
@@ -58,12 +58,12 @@ print(f'Hey {name} is {age}')
 greet = 'hello'
 print(greet[0:len(greet)])
 
-qoute = 'to be or not to be'
+quote = 'to be or not to be'
 # methods
-print(qoute.capitalize())
-print(qoute.upper())
-print(qoute.find('be'))
-print(qoute.replace('be', 'me'))
+print(quote.capitalize())
+print(quote.upper())
+print(quote.find('be'))
+print(quote.replace('be', 'me'))
 
 # boolean
 name = 'Biruk'
@@ -73,10 +73,11 @@ name = 'Biruk'
 
 print(bool(1))
 
-# name = 'Jhon'
+# name = 'John'
 age = 22
 relationship_status = 'single'
 relationship_status = 'it\'s complicated'
+
 print(relationship_status)
 
 birth_year = input('what year were you born ? ')
@@ -105,7 +106,7 @@ print(amazon_cart[1])
 
 amazon_cart = [
     'notebooks',
-    'singlasses',
+    'sunglasses',
     'toys',
     'grapes'
 ]
@@ -115,7 +116,7 @@ new_cart = amazon_cart
 new_cart2 = amazon_cart[:]  # amazon_cart.copy()
 amazon_cart[0] = 'laptop'
 print(new_cart)  # this one update every time when amazon_cart updated
-print(new_cart2)  # only has amazon_cart value that assigned eariler
+print(new_cart2)  # only has amazon_cart value that assigned earlier
 print(amazon_cart[0::2])
 # lists are immutable
 
@@ -149,7 +150,7 @@ print(basket)  # by index remove like basket.pop(0)
 basket.remove(4)  # by value remove
 print(basket)
 
-new_list = basket.pop(4)  # it holds a avalue that removed
+new_list = basket.pop(4)  # it holds a value that removed
 
 # basket.clear()
 basket = ['a', 'b', 'c', 'd', 'e', 'd']
