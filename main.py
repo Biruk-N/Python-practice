@@ -1,12 +1,12 @@
 # name = input('add your name \n')
-      
+
 # print(name + ' first one')
 
 # print(type(2 + 5))
 # print(2**2)
 # print(8//6)
 # print(8//3)
-#math functions
+# math functions
 print(round(3.2))
 print(abs(-39))
 
@@ -26,9 +26,8 @@ x += 2
 print(x)
 
 # strings and concatination
-x = 'this is me' + ' ' +'and you'
+x = 'this is me' + ' ' + 'and you'
 print(x)
-
 
 # type conversion
 number = 10
@@ -42,7 +41,7 @@ emoji = """
       O O
       ___
 """
-print (emoji)
+print(emoji)
 
 # formatted strings
 
@@ -66,15 +65,15 @@ print(qoute.upper())
 print(qoute.find('be'))
 print(qoute.replace('be', 'me'))
 
-#boolean
+# boolean
 name = 'Biruk'
-is_cool = False
+# is_cool = False
 
-is_cool = True
+# is_cool = True
 
 print(bool(1))
 
-name = 'Jhon'
+# name = 'Jhon'
 age = 22
 relationship_status = 'single'
 relationship_status = 'it\'s complicated'
@@ -85,7 +84,6 @@ birth_year = input('what year were you born ? ')
 age = 2022 - int(birth_year)
 
 print(f'your age is: {age}')
-
 
 # password checker
 username = input('what is your username ?')
@@ -106,30 +104,30 @@ amazon_cart = ['notebooks', 'sunglass']
 print(amazon_cart[1])
 
 amazon_cart = [
-  'notebooks', 
-  'singlasses',
-  'toys',
-  'grapes'
+    'notebooks',
+    'singlasses',
+    'toys',
+    'grapes'
 ]
 # list slicing
 amazon_cart[0] = 'pc'
 new_cart = amazon_cart
-new_cart2 = amazon_cart[:] # amazon_cart.copy()
+new_cart2 = amazon_cart[:]  # amazon_cart.copy()
 amazon_cart[0] = 'laptop'
-print(new_cart) # this one update every time when amazon_cart updated
-print(new_cart2) # only has amazon_cart value that assigned eariler
+print(new_cart)  # this one update every time when amazon_cart updated
+print(new_cart2)  # only has amazon_cart value that assigned eariler
 print(amazon_cart[0::2])
 # lists are immutable
 
 # Matrix
 matrix = [
-  [1, 2, 3], 
-  [4, 5, 6],
-  [7, 8, 9]
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
 ]
 print(matrix[0][1])
 
-#list method
+# list method
 
 basket = [1, 2, 3, 4]
 new_list = basket.append(100)
@@ -146,23 +144,23 @@ new_list = basket
 print(new_list)
 
 basket.pop()
-print(basket) # by index remove like basket.pop(0)
+print(basket)  # by index remove like basket.pop(0)
 
-basket.remove(4)# by value remove
+basket.remove(4)  # by value remove
 print(basket)
 
-new_list = basket.pop(4) # it holds a avalue that removed
+new_list = basket.pop(4)  # it holds a avalue that removed
 
 # basket.clear()
 basket = ['a', 'b', 'c', 'd', 'e', 'd']
-print(basket.index('d', 2, 4)) # 2 & 4 are start and end of index to searching for d
-print('d' in basket) # boolean value
+print(basket.index('d', 2, 4))  # 2 & 4 are start and end of index to searching for d
+print('d' in basket)  # boolean value
 print(basket.count('d'))
 # ======
 basket.sort()
 print(basket)
 # or
-print(sorted(basket)) # it does't change the original value
+print(sorted(basket))  # it does't change the original value
 basket.reverse()
 print(basket)
 
@@ -170,9 +168,9 @@ print(basket)
 # to reverse slicing reverse
 
 print(basket[::-1])
-print(basket) # not changed by slicing reverse
+print(basket)  # not changed by slicing reverse
 
-print(range(1, 100)) # range(1, 100)
+print(range(1, 100))  # range(1, 100)
 print(list(range(1, 100)))
 # or
 print(list(range(101)))
@@ -197,42 +195,42 @@ print(d)
 # None 
 #  Dictionary
 dictionary = {
-  'a': [1, 2, 4], 
-  'b': 'hello',
-  'c': True
+    'a': [1, 2, 4],
+    'b': 'hello',
+    'c': True
 }
 print(dictionary)
 print(dictionary['b'])
 print(dictionary['a'][1])
 
 mylist = [
-  {
-  'a': [1, 2, 4], 
-  'b': 'hello',
-  'c': True
-},
-  {
-  'a': [4, 2, 4], 
-  'b': 'hello',
-  'c': True
-}
+    {
+        'a': [1, 2, 4],
+        'b': 'hello',
+        'c': True
+    },
+    {
+        'a': [4, 2, 4],
+        'b': 'hello',
+        'c': True
+    }
 ]
 print(mylist[0]['a'])
 
 #  dictionary methods
 user = {
-  'basket': [1, 2, 3],
-  'greet': 'hello',
-  'age': 20
+    'basket': [1, 2, 3],
+    'greet': 'hello',
+    'age': 20
 }
 
 print('hello' in user.values())
 print(user.items())
 
 print(user.get('age'))
-print(user.get('age', 44)) # if not exist
+print(user.get('age', 44))  # if not exist
 
-user2 = dict(name = 'John')
+user2 = dict(name='John')
 print(user2)
 user2.clear()
 print(user2)
@@ -250,7 +248,7 @@ my_tuple = (1, 2, 3, 4, 5)
 print(5 in my_tuple)
 
 new_tuple = my_tuple[1:2]
-print(new_tuple) # (2,)
+print(new_tuple)  # (2,)
 
 new_tuple = my_tuple[1:4]
 print(new_tuple)
@@ -261,7 +259,7 @@ print(y)
 print(z)
 print(other)
 
-#tuple methods are 2 count & index
+# tuple methods are 2 count & index
 
 print(my_tuple.count(4))
 print(my_tuple.index(4, 1, 5))
@@ -271,7 +269,7 @@ print(len(my_tuple))
 # unordered collections of unique objetcs
 
 my_set = {2, 4, 3, 4, 4, 5}
-print(my_set) # {2, 3, 4, 5}
+print(my_set)  # {2, 3, 4, 5}
 my_set.add(100)
 my_set.add(2)
 
@@ -293,7 +291,7 @@ print(my_set & your_set)
 print(my_set.isdisjoint(your_set))
 # issubset()
 # isuperset()
-print(my_set.union(your_set)) 
+print(my_set.union(your_set))
 # or
 print(my_set | your_set)
 my_set = {4, 5}
@@ -301,7 +299,7 @@ your_set = {4, 5, 6, 7, 8, 9, 10}
 print(my_set.issubset(your_set))
 print(my_set.issuperset(your_set))
 
-b =['dh', 'hd']
+b = ['dh', 'hd']
 print('j' in b)
 
 # indentation
@@ -319,13 +317,11 @@ print('okok')
 
 # Truthy and falsy
 
-print(bool('hello')) # truthy
+print(bool('hello'))  # truthy
 
-print(bool('')) #falsy
+print(bool(''))  # falsy
 
-print(bool(0)) # falsy
-
-
+print(bool(0))  # falsy
 
 password = '123'
 
@@ -335,7 +331,6 @@ if password and username:
     print('go on')
 else:
     print('please fill the form')
-
 
 # Ternary operators
 
@@ -356,12 +351,11 @@ is_User = True
 if is_Friend and is_User:
     print('bff')
 
-
 # Logical operators
 
 # and, or, >, <, ==, >=, <=, !=, not
 
-print('a' > 'A') # True because
+print('a' > 'A')  # True because
 # indentation
 
 is_old = True
@@ -377,13 +371,11 @@ print('okok')
 
 # Truthy and falsy
 
-print(bool('hello')) # truthy
+print(bool('hello'))  # truthy
 
-print(bool('')) #falsy
+print(bool(''))  # falsy
 
-print(bool(0)) # falsy
-
-
+print(bool(0))  # falsy
 
 password = '123'
 
@@ -393,7 +385,6 @@ if password and username:
     print('go on')
 else:
     print('please fill the form')
-
 
 # Ternary operators
 
@@ -414,12 +405,11 @@ is_User = True
 if is_Friend and is_User:
     print('bff')
 
-
 # Logical operators
 
 # and, or, >, <, ==, >=, <=, !=, not
 
-print('a' > 'A') # True because
+print('a' > 'A')  # True because
 # ternary operator
 is_true = False
 test = 'this on is true' if is_true else 'this is incorrect'
@@ -427,31 +417,25 @@ print(test)
 # loops
 # for loop
 for item in 'this is a test':
-  print(item)
-
-
-
-
-
-
-
-
-
+    print(item)
 
 
 # return
 def sum(num1, num2):
-  def another_func(n1, n2):
-    return n1 + n2
-  return another_func(num1, num2)
-  print('hello') # not executed after return the function is exit
+    def another_func(n1, n2):
+        return n1 + n2
+
+    return another_func(num1, num2)
+    print('hello')  # not executed after return the function is exit
+
 
 total = sum(10, 20)
 print(total)
 
 
-#1. Wrap the above code in a function called checkDriverAge(). Whenever you call this function, you will get prompted for age. 
+# 1. Wrap the above code in a function called checkDriverAge(). Whenever you call this function, you will get prompted for age.
 # Notice the benefit in having checkDriverAge() instead of copying and pasting the function everytime?
+
 def checkDriverAge():
     age = input("What is your age?: ")
     if int(age) < 18:
@@ -460,18 +444,23 @@ def checkDriverAge():
         print("Powering On. Enjoy the ride!");
     elif int(age) == 18:
         print("Congratulations on your first year of driving. Enjoy the ride!")
+
+
 checkDriverAge()
 
-#2 Instead of using the input(). Now, make the checkDriverAge() function accept an argument of age, so that if you enter:
-#checkDriverAge(92);
-#it returns "Powering On. Enjoy the ride!"
-#also make it so that the default age is set to 0 if no argument is given.
 
-def checkDriverAge(age=0):
+# 2 Instead of using the input(). Now, make the checkDriverAge() function accept an argument of age, so that if you enter:
+# checkDriverAge(92);
+# it returns "Powering On. Enjoy the ride!"
+# also make it so that the default age is set to 0 if no argument is given.
+
+def check_Driver_Age(age=0):
     if int(age) < 18:
         print("Sorry, you are too yound to drive this car. Powering off")
     elif int(age) > 18:
         print("Powering On. Enjoy the ride!");
     elif int(age) == 18:
         print("Congratulations on your first year of driving. Enjoy the ride!")
-checkDriverAge()
+
+
+check_Driver_Age()
