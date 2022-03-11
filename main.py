@@ -499,10 +499,26 @@ while True:
     if response == 'bye':
         break
 
-
 # continue
+my_list = [1, 2, 3]
+while i < len(my_list):
+    print(my_list[i])
+    i += 1
+    continue
 
+my_list = [1, 2, 3]
+while i < len(my_list):
+    print(my_list[i])
+    continue
+    i += 1
+#     prints nothing
 # pass
+while i < len(my_list):
+    print(my_list[i])
+    pass
+    i += 1
+
+# GUI
 
 # functions
 
@@ -530,7 +546,7 @@ def checkDriverAge():
     if int(age) < 18:
         print("Sorry, you are too young to drive this car. Powering off")
     elif int(age) > 18:
-        print("Powering On. Enjoy the ride!");
+        print("Powering On. Enjoy the ride!")
     elif int(age) == 18:
         print("Congratulations on your first year of driving. Enjoy the ride!")
 
@@ -548,7 +564,7 @@ def checkdriverage(age=0):
     if int(age) < 18:
         print("Sorry, you are too your to drive this car. Powering off")
     elif int(age) > 18:
-        print("Powering On. Enjoy the ride!");
+        print("Powering On. Enjoy the ride!")
     elif int(age) == 18:
         print("Congratulations on your first year of driving. Enjoy the ride!")
 

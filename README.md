@@ -101,11 +101,11 @@ The pracitce file is in [main.py](main.py)
 > 
 > enumerate(): to list index with value in for loop
 #### while : when the value not known
-> break
+> break: break out of the loop.
 > 
-> continue
+> continue: means back to the loop don't care about the other program left in a function. print nothing.
 > 
-> pass
+> pass: pass to the next ... at least fill something in a loop if nothing is there in a loop
 
 
 ### Table
