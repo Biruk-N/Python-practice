@@ -751,7 +751,7 @@ outer()
 # inner:  nonlocal
 # outer nonlocal
 # walrus operator
-a = 'hellooooooo'
+a = 'helloooooo'
 
 if (n := len(a)) > 10:
     print(f'too long {n} elements')
