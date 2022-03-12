@@ -106,6 +106,8 @@ The pracitce file is in [main.py](main.py)
 > continue: means back to the loop don't care about the other program left in a function. print nothing.
 > 
 > pass: pass to the next ... at least fill something in a loop if nothing is there in a loop
+> 
+> print(value, end=)
 
 
 ### Table

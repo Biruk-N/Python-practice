@@ -368,7 +368,7 @@ if is_old and is_licenced:
 else:
     print('sorry')
 
-print('okok')
+print('ok ok')
 
 # Truthy and falsy
 
@@ -519,6 +519,30 @@ while i < len(my_list):
     i += 1
 
 # GUI
+picture = [
+    [0, 0, 0, 1, 0, 0, 0],
+    [0, 0, 1, 1, 1, 0, 0],
+    [0, 1, 1, 1, 1, 1, 0],
+    [1, 1, 1, 1, 1, 1, 1],
+    [0, 0, 0, 1, 0, 0, 0],
+    [0, 0, 0, 1, 0, 0, 0]
+]
+
+for image in picture:
+    for pixel in image:
+        if pixel == 1:
+            print('*')
+        elif pixel == 0:
+            print(' ')
+#  it prints all value in new line because by default print() has new line
+for image in picture:
+    for pixel in image:
+        if pixel == 1:
+            print('*', end='')
+        elif pixel == 0:
+            print(' ', end='')
+    print('')
+
 
 # functions
 
