@@ -109,7 +109,31 @@ The pracitce file is in [main.py](main.py)
 > 
 > print(value, end=)
 
-
+### functions
+> to do action in our code.
+> 
+> DRY(don't repeat your self)
+> 
+> parameter vs argument 
+> 
+> positional arguments
+> 
+> default parameter and keyword arguments
+> 
+> return
+> 
+> docstrings description of the function, help(func), print(func.__doc__) 
+> 
+> argument and keyword argument(*args **kwargs)
+> 
+> rule of orders: params, *args, default parameters, **kwargs
+> 
+> Scope inside a function varables are local variables
+> 
+> global key word
+> 
+> nonlocal key word
+### walrus operator
 ### Table
 
 | Mutable | Immutable |

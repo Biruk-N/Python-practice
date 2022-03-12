@@ -542,23 +542,59 @@ for image in picture:
         elif pixel == 0:
             print(' ', end='')
     print('')
+# Exercise find the duplicates
+some_list = ['a', 'b', 'c', 'b', 'd', 'n', 'n']
+
+duplicates = []
+for value in some_list:
+    if some_list.count(value) > 1:
+        if value not in duplicates:
+            duplicates.append(value)
+print(duplicates)
 
 
 # functions
-
-# return
-def sum(num1, num2):
-    def another_func(n1, n2):
-        return n1 + n2
-
-    return another_func(num1, num2)
-    print('hello')  # not executed after return the function will exit.
-
-
-total = sum(10, 20)
-print(total)
+def show_tree():
+    for image in picture:
+        for pixel in image:
+            if pixel == 1:
+                print('*', end='')
+            elif pixel == 0:
+                print(' ', end='')
+        print('')
 
 
+show_tree()
+show_tree()
+
+
+# Parameter vs Arguments
+def register(name='sally', emoji='😊'):
+    # parameter is 'name'
+    print(f'hello {name} {emoji}')
+
+
+# arguments
+register('biruk', '😊')
+
+# keyword arguments
+register(emoji='😊', name='Bibi')
+
+
+# # return
+# def sum(num11, num22):
+#     def another_function(n1, n2):
+#         return n1 + n2
+#
+#     return another_function(num11, num22)
+#     print('hello')  # not executed after return the function will exit.
+#
+#
+# total = sum(10, 20)
+# print(total)
+
+
+# Question on tesla
 # 1. Wrap the above code in a function called checkDriverAge().
 # Whenever you call this function, you will get prompted for age.
 # Notice the benefit in having checkDriverAge() instead of copying and pasting the function
@@ -594,3 +630,128 @@ def checkdriverage(age=0):
 
 
 checkdriverage()
+
+
+# methods vs functions
+# create methods in class
+# custom function
+
+
+# Docstrings
+def test(a):
+    '''
+    @param a: is a variable
+    @return:
+    '''
+
+
+help(test)
+print(test.__doc__)
+
+
+# clean code
+
+
+def is_even_number(num):
+    if num % 2 == 0:
+        return True
+    return False
+
+
+#     this helps to minimize the code instead of using else this can also improve
+
+
+def is_even(num):
+    return num % 2 == 0
+
+
+print(is_even_number(51))
+print(is_even(50))
+
+
+# args amd kwargs
+def super_func(*args):
+    print(*args)
+    return sum(args)
+
+
+print(super_func(1, 2, 3, 4, 5))
+
+
+def super_funcs(*args, **kwargs):
+    print(kwargs)
+    total = 0
+    for items in kwargs.values():
+        total += items
+    return sum(args, total)
+
+
+print(super_funcs(1, 2, 3, num1=5, num3=6))
+
+
+# Exercise Function
+def highest_even(li):
+    evens = []
+    for number in li:
+        if number % 2 == 0:
+            evens.append(number)
+    return max(evens)
+
+
+print(highest_even([10, 2, 3, 4, 8, 11]))
+# scope
+# 1 - start with local
+# 2 - parent local ?
+# 3 - global
+# 4 - built in python
+
+# global key word
+total = 0
+
+
+def count():
+    # global total +=1 not work
+    global total
+    total += 1
+    return total
+
+
+count()
+
+# or
+
+print(total)
+
+
+def count2(total):
+    # global total +=1 not work
+    total += 1
+    return total
+
+
+print(count2(count2(count2(total))))
+
+
+# nonlocal keyword
+
+
+def outer():
+    x = 'local'
+
+    def inner():
+        nonlocal x
+        x = 'nonlocal'
+        print("inner: ", x)
+
+    inner()
+    print('outer', x)
+
+
+outer()
+# inner:  nonlocal
+# outer nonlocal
+# walrus operator
+a = 'hellooooooo'
+
+if (n := len(a)) > 10:
+    print(f'too long {n} elements')
