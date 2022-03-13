@@ -154,7 +154,7 @@ The pracitce file is in [main.py](main.py)
 > 
 > encapsulation: package
 > 
-> abstraction
+> abstraction: private & public
 > 
 > inheritance
 > 
