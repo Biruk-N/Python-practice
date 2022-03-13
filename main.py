@@ -755,3 +755,17 @@ a = 'helloooooo'
 
 if (n := len(a)) > 10:
     print(f'too long {n} elements')
+
+
+# OOP
+class PlayerCharacter:
+    def __init__(self, name):
+        self.name = name
+        print('hey')
+
+    def run(self):
+        print(f'self.name')
+
+
+player1 = PlayerCharacter('biruk')
+print(player1)

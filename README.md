@@ -144,10 +144,23 @@ The pracitce file is in [main.py](main.py)
 | -  | String |
 
 
-
+### OOP
+> class
+> 
+> 4 pillars of OOP
+> 
+> encapsulation: package
+> 
+> abstraction
+> 
+> inheritance
+> 
+> 
 
 ### All tutorial
 
 - [x] Python basics I
 - [x] Python basics II
-- [ ] Advaned 
+- [x] Advanced oop
+- [ ] Advanced 
+- [ ] Advanced
