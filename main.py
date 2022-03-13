@@ -761,11 +761,76 @@ if (n := len(a)) > 10:
 class PlayerCharacter:
     def __init__(self, name):
         self.name = name
-        print('hey')
+        # print('hey')
 
     def run(self):
-        print(f'self.name')
+        print(f'you\'r name is {self.name}')
 
 
 player1 = PlayerCharacter('biruk')
-print(player1)
+print(player1.run())
+
+
+# print(player1.name) shows the name
+
+
+# class object attribute
+class PlayerCharacter:
+    membership = True
+
+    # static can not be changed
+
+    def __init__(self, name, age):
+        if age > 18:
+            self.name = name
+            self.age = age
+        # print('hey')
+
+    def run(self):
+        print(f'you\'r name is {self.name}')
+
+
+player1 = PlayerCharacter('biruk', 22)
+print(player1.membership)
+
+
+# class object attribute can be accessed directly in a class
+
+# @classmethod
+class PlayerCharacter2:
+    membership = True
+
+    # static can not be changed
+
+    @classmethod
+    def adding_things(cls, num1, num2):
+        return num1 + num2
+
+    @staticmethod
+    # only differ with class method by, static we don't access to cls
+    def subtracting_things(cls, num11, num22):
+        return num11 - num22
+
+
+print(PlayerCharacter2.adding_things(23, 22))
+print(PlayerCharacter2.adding_things(2, 3))
+# can access directly, without object instantiate
+
+
+# abstraction
+class TestClass:
+    def __init__(self, name):
+        self.__name = name
+    # not real private just address for developer don't change it by __
+
+    def speak(self):
+        print(f'my name is {self.name}')
+
+
+Test = TestClass('and')
+Test.speak = 'booo'
+print(Test.speak)
+
+# inheritance
+class User:
+    pass

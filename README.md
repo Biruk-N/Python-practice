@@ -147,6 +147,9 @@ The pracitce file is in [main.py](main.py)
 ### OOP
 > class
 > 
+> @classmethod and @staticmethod
+> 
+> 
 > 4 pillars of OOP
 > 
 > encapsulation: package
