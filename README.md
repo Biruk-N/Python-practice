@@ -158,7 +158,7 @@ The pracitce file is in [main.py](main.py)
 > 
 > inheritance
 > 
-> 
+> polymorphism 
 
 ### All tutorial
 
