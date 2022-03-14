@@ -755,7 +755,17 @@ a = 'helloooooo'
 
 if (n := len(a)) > 10:
     print(f'too long {n} elements')
+'''
 
+ ----------------------------------------------------------------
+|                                                                |
+|                           OOP                                  |
+|                                                                |
+|                                                                |
+|                                                                |
+|                                                                |
+ ----------------------------------------------------------------
+'''
 
 # OOP
 class PlayerCharacter:
@@ -814,6 +824,8 @@ class PlayerCharacter2:
 
 print(PlayerCharacter2.adding_things(23, 22))
 print(PlayerCharacter2.adding_things(2, 3))
+
+
 # can access directly, without object instantiate
 
 
@@ -821,6 +833,7 @@ print(PlayerCharacter2.adding_things(2, 3))
 class TestClass:
     def __init__(self, name):
         self.__name = name
+
     # not real private just address for developer don't change it by __
 
     def speak(self):
@@ -831,6 +844,42 @@ Test = TestClass('and')
 Test.speak = 'booo'
 print(Test.speak)
 
+
 # inheritance
 class User:
-    pass
+
+    def sign_in(self):
+        print('logged in')
+
+
+class Wizard(User):
+    def __init__(self, name, power):
+        self.name = name
+        self.power = power
+
+    def attack(self):
+        print(f'attacking with, {self.power}')
+
+
+class Archer(User):
+    def __init__(self, name, num_arrow):
+        self.name = name
+        self.num_arrow = num_arrow
+
+    def attack(self):
+        print(f'attacking with arrows : arrows left - {self.num_arrow}')
+
+
+wizard1 = Wizard('Merlin', 50)
+archer1 = Archer('Robin', 100)
+
+print(wizard1.attack())
+print(archer1.attack())
+print(isinstance(archer1, User))
+# True
+print(isinstance(archer1, object))
+# True b/c all python code is an object
+
+# Polymorphism
+
+
