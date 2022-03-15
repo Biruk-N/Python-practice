@@ -895,3 +895,195 @@ player_attack(archer1)
 # print(archer1.attack())
 for char in [wizard1, archer1]:
     char.attack()
+
+
+# super()
+
+class User2(object):
+    def __init__(self, email):
+        self.email = email
+
+    def sign_in(self):
+        print('logged in')
+
+
+class Wizard2(User2):
+    def __init__(self, name, power, email):
+        # User2.__init__(self, email)
+        # or
+        super().__init__(email)
+        self.name = name
+        self.power = power
+
+    def attack(self):
+        print(f'attacking with, {self.power}')
+
+
+class Archer2(User2):
+
+    def attack(self):
+        print(f'attacking with arrows : arrows left - {self.num_arrow}')
+
+
+wizard1 = Wizard2('Merlin', 50, 'merlin@gmail.com')
+# archer1 = Archer2('Robin', 100)
+print(wizard1.email)
+# make an error because of parameter without passing email to Wizard2
+# prints => merlin@gmail.com
+
+# introspection is the ability to determine the type of object at runtime
+
+print(dir(wizard1))
+
+
+# list all dunder methods that we have access to
+# dunder
+class Toy:
+    def __init__(self, color, age):
+        self.color = color
+        self.age = age
+        self.mydict = {
+            'name': 'Yoyo',
+            'has_pets': False
+        }
+
+    def __str__(self):
+        return f'{self.color}'
+
+    def __len__(self):
+        return 5
+
+    def __del__(self):
+        print('deleted!')
+
+    def __call__(self):
+        return f'yes'
+
+    def __getitem__(self, i):
+        return self.mydict[i]
+
+
+action_figure = Toy('red', 0)
+print(str(action_figure))
+# or same as dunder method
+print(action_figure.__str__())
+# prints <__main__.Toy object at 0x7f35e3df3d60>
+# also allow customization
+# after modify returns red
+print(len(action_figure))
+# prints 5
+
+print(action_figure())
+# refers call
+del action_figure
+
+# after this action_figure is not known
+
+# deleted!
+action_figure = Toy('red', 9)
+print(action_figure['name'])
+
+
+class Example:
+    def __init__(self):
+        print("Instance Created")
+
+    # Defining __call__ method
+    def __call__(self):
+        print("Instance is called via special method")
+
+
+# Instance created
+e = Example()
+
+# __call__ method will be called
+print(e())
+
+
+# Instance Created
+# Instance is called via special method
+# Exercise on extending list
+class SuperList(list):
+    def __len__(self):
+        return 1000
+
+
+super_list1 = SuperList()
+
+print(len(super_list1))
+super_list1.append(5)
+print(super_list1)
+print(super_list1[0])
+print(issubclass(list, object))
+
+
+# Multiple inheritance
+
+class User3():
+
+    def sign_in(self):
+        print('logged in')
+
+
+class Wizard3(User3):
+    def __init__(self, name, power):
+        self.name = name
+        self.power = power
+
+    def attack(self):
+        print(f'attacking with, {self.power}')
+
+
+class Archer3(User3):
+
+    def __init__(self, name, num_arrow):
+        self.name = name
+        self.num_arrow = num_arrow
+
+    def attack(self):
+        print(f'attacking with arrows : arrows left - {self.num_arrow}')
+
+    def run(self):
+        print('ran really fast ')
+
+    def check_arrows(self):
+        print(f'{self.num_arrow} remaining')
+
+
+class HybridBorg(Wizard3, Archer3):
+    def __init__(self, name, power, num_arrow):
+        Archer3.__init__(self, name, num_arrow)
+        Wizard3.__init__(self, name, power)
+
+
+# hb1 = HybridBorg('borgie', 50)
+# but this could lead to error due to argument that pass
+# to solve this we need to pass all available variables from instance classes
+# print(hb1.run())
+hb1 = HybridBorg('borgie', 50, 90)
+print(hb1.attack())
+
+
+# MRO - Method Resolution Order
+class A:
+    num = 10
+
+
+class B:
+    pass
+
+
+class C:
+    num = 1
+
+
+class D(B, C):
+    pass
+
+
+dd = D()
+print(dd.num)
+
+# 1
+print(D.mro())
+D.__mro__()
