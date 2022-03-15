@@ -1087,3 +1087,18 @@ print(dd.num)
 # 1
 print(D.mro())
 D.__mro__()
+
+
+# Functional Programming
+# Pure Function
+# Map(), Filter(), Reduce()
+my_list = [1, 2, 3]
+
+
+def number_list(item):
+
+    return item * 2
+
+
+print(list(map(number_list, my_list)))
+print(list(filter(number_list, my_list)))
