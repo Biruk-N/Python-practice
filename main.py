@@ -1091,7 +1091,7 @@ D.__mro__()
 
 # Functional Programming
 # Pure Function
-# Map(), Filter(), Reduce()
+# Map(), Filter(), zip(),  Reduce()
 my_list = [1, 2, 3]
 
 
