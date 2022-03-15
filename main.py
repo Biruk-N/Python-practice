@@ -767,6 +767,7 @@ if (n := len(a)) > 10:
  ----------------------------------------------------------------
 '''
 
+
 # OOP
 class PlayerCharacter:
     def __init__(self, name):
@@ -878,8 +879,19 @@ print(archer1.attack())
 print(isinstance(archer1, User))
 # True
 print(isinstance(archer1, object))
+
+
 # True b/c all python code is an object
 
 # Polymorphism
+# same methods different calling of an object
+def player_attack(char):
+    char.attack()
 
 
+player_attack(wizard1)
+player_attack(archer1)
+
+# print(archer1.attack())
+for char in [wizard1, archer1]:
+    char.attack()
