@@ -187,5 +187,5 @@ The pracitce file is in [main.py](main.py)
 - [x] Python basics I
 - [x] Python basics II
 - [x] Advanced oop
-- [ ] Advanced 
+- [x] Advanced Functional programming
 - [ ] Advanced
