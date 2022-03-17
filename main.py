@@ -1196,3 +1196,93 @@ duplicates = list(set([x for x in some_list if some_list.count(x) > 1]))
 print(duplicates)
 
 # python decorators
+from time import time
+
+
+def my_decorator(func):
+    def wrap_function():
+        t1 = time()
+        print(t1)
+        func()
+        t2 = time
+        print(t2())
+
+    return wrap_function
+
+
+@my_decorator
+def hello():
+    print('hello')
+
+
+hello()
+
+
+def performance(fn):
+    def wrap_function(*args, **kwargs):
+        t1 = time()
+        result = fn(*args, **kwargs)
+        t2 = time()
+        print(f'took {t2 - t1}')
+        return result
+
+    return wrap_function
+
+
+@performance
+def long_time():
+    for i in range(100000):
+        i * 5
+
+
+long_time()
+
+
+def my_decorator(func):
+    def wrap_function():
+        print('********')
+        func()
+        print('********')
+
+    return wrap_function
+
+
+@my_decorator
+def hello():
+    print('hello')
+
+
+hello()
+
+
+def my_decorator(func):
+    def wrap_function(x, y):
+        func(x, y)
+
+    return wrap_function
+
+
+@my_decorator
+def hello(greeting, emoji):
+    print(greeting, emoji)
+    pass
+
+
+a = my_decorator(hello)
+a('Hey', ':) \n\n\n')
+
+
+def my_decorator(func):
+    def wrap_function(*args, **kwargs):
+        func(*args, **kwargs)
+
+    return wrap_function
+
+
+@my_decorator
+def hello(greeting, emoji=':('):
+    print(greeting, emoji)
+    pass
+
+
+hello('Hey')
