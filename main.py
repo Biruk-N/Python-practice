@@ -1286,3 +1286,4 @@ def hello(greeting, emoji=':('):
 
 
 hello('Hey')
+# error handling
