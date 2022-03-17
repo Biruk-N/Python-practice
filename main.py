@@ -7,6 +7,8 @@
 # print(8//6)
 # print(8//3)
 # math functions
+from functools import reduce
+
 print(round(3.2))
 print(abs(-39))
 
@@ -1086,8 +1088,7 @@ print(dd.num)
 
 # 1
 print(D.mro())
-D.__mro__()
-
+# D.__mro__()
 
 # Functional Programming
 # Pure Function
@@ -1096,9 +1097,102 @@ my_list = [1, 2, 3]
 
 
 def number_list(item):
-
     return item * 2
 
 
 print(list(map(number_list, my_list)))
-print(list(filter(number_list, my_list)))
+
+
+# filter
+
+
+def is_odd(num):
+    return num % 2 != 0
+
+
+print(list(filter(is_odd, my_list)))
+
+# zip()
+your_list = [10, 20, 30]
+# def
+print(list(zip(my_list, your_list)))
+
+
+# [(1, 10), (2, 20), (3, 30)]
+
+# reduce()
+# from functools import reduce
+def accumulator(acc, item):
+    return acc + item
+
+
+print(reduce(accumulator, my_list, 0))
+# 6
+
+# lambda expressions
+print(list(map(lambda numbers: numbers * 2, my_list)))
+print(reduce(lambda acc, num: acc + num, my_list, 0))
+
+# exercise to square a list
+
+my_list = [5, 4, 3]
+
+print(list(map(lambda square: square ** 2, my_list)))
+
+# 2 List soring
+a = [(0, 2), (4, 3), (9, 9), (10, -1)]
+a.sort(key=lambda num: num[1])
+print(a)
+
+# List Comprehensions or set or dictionary comprehensions
+# a quick way to create list
+my_list = []
+for char in 'hello':
+    my_list.append(char)
+print(my_list)
+# instead of these in comprehension
+
+# my_list = [param for param in iterable]
+my_list = [char for char in 'hello']
+print(my_list)
+
+my_list2 = [num for num in range(0, 100)]
+# print(my_list2) list down 0 - 99
+
+my_list3 = [num * 2 for num in range(0, 100)]
+# print(my_list3) 0, 2, 4, ...., 198
+my_list3 = [num ** 2 for num in range(0, 100)]
+my_list4 = [num ** 2 for num in range(0, 100) if num % 2 == 0]
+# print(my_list4) 0, 4, 16, 9467
+
+# set, dictionary comprehension
+my_list = {char for char in 'hello'}
+print(my_list)
+
+my_list2 = {num for num in range(0, 100)}
+# print(my_list2) list down 0 - 99
+
+simple_dict = {
+    'a': 1,
+    'b': 2
+}
+# my_dict = {key:value}
+my_dict = {key: value ** 2 for key, value in simple_dict.items()}
+my_dict = {key: value ** 2 for key, value in simple_dict.items() if value % 2 == 0}
+# print(my_dict) {'a': 1, 'b': 4}
+
+my_dict = {num: num*2 for num in [1, 2, 3]}
+print(my_dict)
+
+# exercise comprehension
+some_list = ['a', 'b', 'c', 'b', 'd', 'n', 'n']
+
+# duplicates = []
+# for value in some_list:
+#     if some_list.count(value) > 1:
+#         if value not in duplicates:
+#             duplicates.append(value)
+duplicates = list(set([x for x in some_list if some_list.count(x) > 1]))
+print(duplicates)
+
+# python decorators

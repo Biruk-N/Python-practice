@@ -144,7 +144,7 @@ The pracitce file is in [main.py](main.py)
 | -  | String |
 
 
-### OOP
+# OOP
 > class
 > 
 > @classmethod and @staticmethod
@@ -159,6 +159,28 @@ The pracitce file is in [main.py](main.py)
 > inheritance
 > 
 > polymorphism 
+> 
+> dunder mehtod
+> 
+> MRO method resolution order
+
+# Functional programming
+
+> map()
+> 
+> filter()
+> 
+> zip()
+> 
+> reduce()
+> 
+> lambda expression
+> 
+> list comprehension
+> 
+> set and dictionary comprehension
+
+# Decoration
 
 ### All tutorial
 
