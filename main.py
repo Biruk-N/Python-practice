@@ -1287,3 +1287,7 @@ def hello(greeting, emoji=':('):
 
 hello('Hey')
 # error handling
+try:
+    x = 2
+except Exception:
+    print(Exception)
